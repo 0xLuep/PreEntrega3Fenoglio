@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <h2>Lista de Productos</h2>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="sku" placeholder="SKU">
+            <span id="skuError" class="error"></span>
+        </div>
+        <div class="input-container">
+            <input type="text" id="productName" placeholder="Nombre del producto">
+            <span id="productNameError" class="error"></span>
+        </div>
+        <div class="input-container">
+            <input type="text" id="price" placeholder="Precio">
+            <span id="priceError" class="error"></span>
+        </div>
+        <button id="addProd">Añadir Producto</button>
+    </div>
+    <table id="productTable">
+        <tr>
+            <th>SKU</th>
+            <th>Nombre del producto</th>
+            <th>Precio</th>
+            <th id="buttonColumn"></th>
+        </tr>
+    </table>
+    <script src="./main.js"></script>
 </body>
 </html>
